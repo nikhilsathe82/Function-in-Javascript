@@ -1,0 +1,10 @@
+
+function generateGreeting(name) {
+
+    console.log("Hello", name);
+    
+}
+
+generateGreeting("Nikhil");
+generateGreeting("Shreya");
+generateGreeting("Viraj");

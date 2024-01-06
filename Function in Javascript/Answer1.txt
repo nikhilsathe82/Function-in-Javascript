@@ -1,0 +1,7 @@
+Function in Javascript_question
+
+function square(x){
+ console.log("The square of entered number "+ x +" is ", x*x);
+}
+
+square(10);

@@ -1,0 +1,17 @@
+
+function findFactorial(num) {
+
+    if (num < 0) {
+
+        console.log("Enter a positive number");
+        return;        
+    }
+    if (num == 0) return 1;
+
+    let res = num * findFactorial(num - 1);
+
+    return res;
+    
+}
+
+findFactorial(5);

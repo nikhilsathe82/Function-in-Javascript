@@ -1,0 +1,22 @@
+function calcTax (income) {
+
+    return function taxAmount(){
+        const res = 0
+        if (income <=300000){
+            console.log("No Tax!");
+        } else if (income>=300000 && income <=600000){
+            const res = income * 0.05
+            console.log("You have to pay tax of " + res +" Rs");
+            } else if (income >=600000 && income<=900000)  {
+            const res = 15000 + (income - 600000)*0.1; 
+            console.log("You have to pay tax of " + res +" Rs");
+            } else if (income >=900000 && income<=1200000){
+            const res = 45000 + (income - 600000)*0.15; 
+            console.log("You have to pay tax of " + res +" Rs");
+            
+            };
+    };   
+};
+
+const tax = calcTax(900001);
+tax();
